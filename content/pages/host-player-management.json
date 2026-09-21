@@ -6,9 +6,9 @@
   "title": "Host-Player Management | Playersoft",
   "description": "Developing players as a property. An award-winning, mobile-first application that enhances the relationship between a casino player and their host.",
   "schema": {
-    "type": "SoftwareApplication",
+    "type": "Service",
     "name": "Host-Player Management",
-    "applicationCategory": "BusinessApplication"
+    "serviceType": "Casino host and player relationship management software"
   },
   "sections": [
     {

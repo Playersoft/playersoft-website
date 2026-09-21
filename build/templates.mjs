@@ -510,7 +510,7 @@ const RENDERERS = {
 
 /* ---------- structured data (JSON-LD) ----------
    One @graph per page: Organization + WebSite everywhere, a BreadcrumbList on
-   inner pages, and a SoftwareApplication on pages whose JSON has a "schema"
+   inner pages, and a Service on pages whose JSON has a "schema"
    block. Organization details live in site.json → "organization". */
 
 function structuredData(page, site) {
@@ -572,17 +572,20 @@ function structuredData(page, site) {
     });
   }
 
-  if (page.schema && page.schema.type === 'SoftwareApplication') {
+  /* Products are marked up as Service, not SoftwareApplication: Google's
+     SoftwareApplication rich result requires a public price and star ratings,
+     which demo-led B2B software doesn't publish. Service carries the same
+     meaning for search and AI engines without failing validation. */
+  if (page.schema && page.schema.type === 'Service') {
     graph.push({
-      '@type': 'SoftwareApplication',
-      '@id': abs(page.url) + '#software',
+      '@type': 'Service',
+      '@id': abs(page.url) + '#service',
       name: page.schema.name || pageName(page.title),
+      serviceType: page.schema.serviceType,
       description: page.description,
       url: abs(page.url),
-      applicationCategory: page.schema.applicationCategory || 'BusinessApplication',
-      operatingSystem: page.schema.operatingSystem,
-      publisher: { '@id': orgId },
-      provider: { '@id': orgId }
+      provider: { '@id': orgId },
+      brand: { '@type': 'Brand', name: 'Playersoft ONE' }
     });
   }
 

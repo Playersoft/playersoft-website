@@ -6,9 +6,9 @@
   "title": "ONE Mobile App | Playersoft",
   "description": "Three have become ONE. An award-winning mobile app to manage player enrollments, groups, and events for casino gaming and hospitality venues.",
   "schema": {
-    "type": "SoftwareApplication",
+    "type": "Service",
     "name": "ONE Mobile App",
-    "applicationCategory": "BusinessApplication"
+    "serviceType": "Casino player enrollment, event, and group management software"
   },
   "sections": [
     {

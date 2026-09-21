@@ -6,9 +6,9 @@
   "title": "ONE Messaging + Loyalty | Playersoft",
   "description": "An award-winning suite of applications to drive player engagement and loyalty — powered by Playersoft's ONE System.",
   "schema": {
-    "type": "SoftwareApplication",
+    "type": "Service",
     "name": "ONE Messaging + Loyalty",
-    "applicationCategory": "BusinessApplication"
+    "serviceType": "Casino player messaging and loyalty software"
   },
   "sections": [
     {
