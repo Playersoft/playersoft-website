@@ -7,7 +7,7 @@
     "logo": "/assets/img/logo-red-full.png",
     "logoAlt": "Playersoft",
     "favicon": "/assets/img/logo-red-mark.png",
-    "basePath": "/playersoft-website"
+    "basePath": "https://www.playersoft.com"
   },
   "nav": [
     {
