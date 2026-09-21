@@ -5,6 +5,11 @@
   "subnavKey": "host-player-management",
   "title": "Host-Player Management | Playersoft",
   "description": "Developing players as a property. An award-winning, mobile-first application that enhances the relationship between a casino player and their host.",
+  "schema": {
+    "type": "SoftwareApplication",
+    "name": "Host-Player Management",
+    "applicationCategory": "BusinessApplication"
+  },
   "sections": [
     {
       "type": "hero",

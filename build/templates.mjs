@@ -508,6 +508,89 @@ const RENDERERS = {
   cta: sCta
 };
 
+/* ---------- structured data (JSON-LD) ----------
+   One @graph per page: Organization + WebSite everywhere, a BreadcrumbList on
+   inner pages, and a SoftwareApplication on pages whose JSON has a "schema"
+   block. Organization details live in site.json → "organization". */
+
+function structuredData(page, site) {
+  const origin = site.site.baseUrl.replace(/\/$/, '') + BASE;
+  const abs = (u) => origin + u;
+  const org = site.organization || {};
+  const orgId = abs('/#organization');
+  const pageName = (t) => String(t || '').split(' | ')[0].trim();
+
+  const graph = [
+    {
+      '@type': 'Organization',
+      '@id': orgId,
+      name: site.site.name,
+      legalName: org.legalName,
+      url: abs('/'),
+      logo: { '@type': 'ImageObject', url: abs(site.site.logo) },
+      description: site.site.description,
+      email: org.email,
+      telephone: org.telephone,
+      address: org.address ? { '@type': 'PostalAddress', ...org.address } : undefined,
+      contactPoint: org.telephone ? {
+        '@type': 'ContactPoint',
+        contactType: 'sales',
+        telephone: org.telephone,
+        email: org.email,
+        availableLanguage: 'English'
+      } : undefined,
+      sameAs: org.sameAs && org.sameAs.length ? org.sameAs : undefined
+    },
+    {
+      '@type': 'WebSite',
+      '@id': abs('/#website'),
+      name: site.site.name,
+      url: abs('/'),
+      publisher: { '@id': orgId }
+    }
+  ];
+
+  /* Breadcrumbs: Home › Section › Page, using nav labels where they exist. */
+  if (page.url !== '/' && !page.noindex) {
+    const navLabel = (url) => (site.nav.find((n) => n.url === url) || {}).label;
+    const parts = page.url.split('/').filter(Boolean);
+    const crumbs = [{ name: 'Home', url: '/' }];
+    let path = '/';
+    parts.forEach((seg, i) => {
+      path += seg + '/';
+      const last = i === parts.length - 1;
+      const name = last
+        ? ((page.schema && page.schema.name) || navLabel(path) || pageName(page.title))
+        : (navLabel(path) || seg);
+      crumbs.push({ name, url: path });
+    });
+    graph.push({
+      '@type': 'BreadcrumbList',
+      itemListElement: crumbs.map((c, i) => ({
+        '@type': 'ListItem', position: i + 1, name: c.name, item: abs(c.url)
+      }))
+    });
+  }
+
+  if (page.schema && page.schema.type === 'SoftwareApplication') {
+    graph.push({
+      '@type': 'SoftwareApplication',
+      '@id': abs(page.url) + '#software',
+      name: page.schema.name || pageName(page.title),
+      description: page.description,
+      url: abs(page.url),
+      applicationCategory: page.schema.applicationCategory || 'BusinessApplication',
+      operatingSystem: page.schema.operatingSystem,
+      publisher: { '@id': orgId },
+      provider: { '@id': orgId }
+    });
+  }
+
+  const data = { '@context': 'https://schema.org', '@graph': graph };
+  /* JSON.stringify drops undefined fields; escaping < keeps "</script>" safe. */
+  return JSON.stringify(data, null, 2).replace(/</g, '\\u003c');
+}
+
 /* ---------- page shell ---------- */
 
 function renderPage(page, ctx) {
@@ -535,6 +618,10 @@ function renderPage(page, ctx) {
 <meta property="og:description" content="${esc(page.description)}">
 <meta property="og:url" content="${esc(canonical)}">
 <meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+${structuredData(page, site)}
+</script>
 
 <link rel="icon" href="${esc(bp(site.site.favicon))}">
 <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -5,6 +5,11 @@
   "subnavKey": "one-messaging-loyalty",
   "title": "ONE Messaging + Loyalty | Playersoft",
   "description": "An award-winning suite of applications to drive player engagement and loyalty — powered by Playersoft's ONE System.",
+  "schema": {
+    "type": "SoftwareApplication",
+    "name": "ONE Messaging + Loyalty",
+    "applicationCategory": "BusinessApplication"
+  },
   "sections": [
     {
       "type": "hero",

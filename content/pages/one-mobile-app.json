@@ -5,6 +5,11 @@
   "subnavKey": "one-mobile-app",
   "title": "ONE Mobile App | Playersoft",
   "description": "Three have become ONE. An award-winning mobile app to manage player enrollments, groups, and events for casino gaming and hospitality venues.",
+  "schema": {
+    "type": "SoftwareApplication",
+    "name": "ONE Mobile App",
+    "applicationCategory": "BusinessApplication"
+  },
   "sections": [
     {
       "type": "hero",

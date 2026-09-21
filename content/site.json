@@ -9,6 +9,20 @@
     "favicon": "/assets/img/logo-red-mark.png",
     "basePath": ""
   },
+  "organization": {
+    "email": "info@playersoft.com",
+    "telephone": "+1-866-711-4919",
+    "address": {
+      "streetAddress": "504 Mission Ave, Suite 200",
+      "addressLocality": "Escondido",
+      "addressRegion": "CA",
+      "postalCode": "92025",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/playersoft-technologies"
+    ]
+  },
   "nav": [
     {
       "label": "Home",
@@ -120,6 +134,7 @@
     "copyright": "© 2026 Playersoft Technologies"
   },
   "_notes": {
+    "organization": "Feeds the structured data (JSON-LD) on every page. Keep it matching the footer. Add more profile URLs to sameAs (e.g. Crunchbase, X) as they exist.",
     "policyLinks": "Terms / Privacy / Accessibility point at pages that do not exist yet. Create them or update these URLs before launch.",
     "partners": "A Partners page exists on the current live site but was intentionally removed from this redesign. Do not re-add the nav link without asking.",
     "basePath": "GitHub Pages: leave \"\" for a custom domain (playersoft.com) or a user/org site (playersoft.github.io). Set to \"/repo-name\" for a project site served at username.github.io/repo-name/. Rebuild after changing — it rewrites every asset path, link, canonical tag, and sitemap URL.",
