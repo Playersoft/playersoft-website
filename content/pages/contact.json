@@ -20,7 +20,7 @@
       "type": "contact",
       "form": {
         "heading": "Ready to Get Started?",
-        "action": "",
+        "action": "https://formspree.io/f/meaqlayy",
         "fields": [
           {
             "name": "firstName",
