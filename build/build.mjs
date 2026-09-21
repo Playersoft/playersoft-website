@@ -133,6 +133,16 @@ async function build() {
   const bp = (u) => (base && u.startsWith('/') ? base + u : u);
 
   await writeFile(join(SITE, '.nojekyll'), '', 'utf8');
+    /* 404.html is hand-written with root-relative paths; prefix them with basePath.
+     The lookahead skips paths already prefixed, so re-running the build is safe. */
+  if (base) {
+    const p404 = join(SITE, '404.html');
+    const esc = base.slice(1).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const re = new RegExp(`(href|src)="/(?!/|${esc}/)`, 'g');
+    const html404 = await readFile(p404, 'utf8');
+    await writeFile(p404, html404.replace(re, `$1="${base}/`), 'utf8');
+    console.log('  ✓ 404.html paths prefixed with basePath');
+  }
 
   for (const r of RETIRED) {
     const dest = bp(r.to);
