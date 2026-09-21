@@ -1,0 +1,59 @@
+{
+  "slug": "about",
+  "url": "/about/",
+  "navKey": "about",
+  "title": "About Playersoft | Award-Winning Casino Mobile Solutions",
+  "description": "Playersoft delivers award-winning mobile solutions that simplify casino operations and elevate the player experience. Over a decade of proven success.",
+  "sections": [
+    {
+      "type": "hero",
+      "skyline": true,
+      "deco": ["a"],
+      "variant": "page",
+      "eyebrow": "About us",
+      "heading": "Award-Winning Mobile Solutions for the Casino Floor"
+    },
+    {
+      "type": "splitMedia",
+      "heading": "Who We Are",
+      "paragraphs": [
+        "Playersoft delivers award-winning mobile solutions that simplify casino operations and elevate the player's experience. Our technology streamlines enrollments, real-time marketing, and guest interactions — allowing staff to work smarter and build stronger player relationships.",
+        "Designed by industry experts, our easy-to-use systems integrate seamlessly — reducing wait times, driving gaming trips, and maximizing engagement. With over a decade of proven success, Playersoft helps casinos enhance loyalty, increase revenue, and create unforgettable experiences."
+      ],
+      "stats": [
+        { "value": 100, "suffix": "+", "label": "casinos served" },
+        { "value": 15, "suffix": " years", "label": "since 2010" },
+        { "value": 20, "suffix": "+", "label": "states & tribal approved" }
+      ],
+      "image": { "src": "/assets/img/photo-team.jpg", "alt": "The Playersoft team", "height": 380 }
+    },
+    {
+      "type": "richColumns",
+      "sunken": true,
+      "eyebrow": "Our mission",
+      "heading": "Empowering Casino Operations, Enhancing Player Experiences",
+      "paragraphs": [
+        "Our mission is to revolutionize casino operations by delivering innovative, mobile-first solutions that enhance player engagement and streamline services. We are committed to empowering casino teams with cutting-edge technology that simplifies guest interactions, strengthens loyalty, and maximizes operational efficiency.",
+        "With seamless iOS integration and real-time access to player data, our comprehensive suite — including the ONE System and HPM — transforms the way casinos connect with guests. At the heart of Playersoft is a dedication to exceptional player experiences: when players thrive, casinos succeed."
+      ]
+    },
+    {
+      "type": "splitMedia",
+      "eyebrow": "Our allies",
+      "heading": "More Than Integrations — Innovation Collaborators",
+      "paragraphs": [
+        "Innovation works best when it's connected. Meet the partners we build alongside."
+      ],
+      "button": { "label": "Get in touch", "url": "/contact/", "variant": "secondary" },
+      "image": { "src": "/assets/img/photo-partners.jpg", "alt": "Integration partners at work", "height": 300 }
+    },
+    {
+      "type": "cta",
+      "skyline": true,
+      "deco": ["c"],
+      "heading": "Ready to Get Started?",
+      "body": "Book a product demonstration and see ONE running on your floor.",
+      "button": { "label": "Book a demo", "url": "/contact/", "variant": "primary", "size": "lg" }
+    }
+  ]
+}

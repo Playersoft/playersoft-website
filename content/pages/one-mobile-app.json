@@ -1,0 +1,79 @@
+{
+  "slug": "solutions/one-mobile-app",
+  "url": "/solutions/one-mobile-app/",
+  "navKey": "solutions",
+  "subnavKey": "one-mobile-app",
+  "title": "ONE Mobile App | Playersoft",
+  "description": "Three have become ONE. An award-winning mobile app to manage player enrollments, groups, and events for casino gaming and hospitality venues.",
+  "sections": [
+    {
+      "type": "hero",
+      "skyline": true,
+      "deco": ["a"],
+      "variant": "page",
+      "eyebrow": "Solutions · player concierge app",
+      "heading": "ONE Mobile App",
+      "lede": "Three have now become ONE. An award-winning mobile application to manage player enrollments, groups, and events for casino gaming and hospitality venues."
+    },
+    {
+      "type": "moduleBlocks",
+      "blocks": [
+        {
+          "eyebrow": "Module 01",
+          "heading": "ONE Enrollment",
+          "body": "Streamline casino club sign-ups with a mobile solution that eliminates long lines and speeds up new member registrations. Capture player data, verify IDs, and set PINs instantly — anywhere on the casino floor. Enhance guest convenience, strengthen loyalty programs, and improve staff efficiency with seamless system integration.",
+          "image": { "src": "/assets/img/photo-enrollment.jpg", "alt": "Staff enrolling a player on the casino floor", "height": 280 },
+          "reverse": false
+        },
+        {
+          "eyebrow": "Module 02",
+          "heading": "ONE Event Management",
+          "body": "Simplify event execution with a dynamic platform for casino promotional continuity, tournaments, and special events. Automate RSVPs, manage guest lists, and track attendance in real time — a frictionless experience for both staff and players that maximizes engagement and operational success.",
+          "image": { "src": "/assets/img/photo-event.jpg", "alt": "Event check-in at a casino", "height": 280 },
+          "reverse": true
+        },
+        {
+          "eyebrow": "Module 03",
+          "heading": "ONE Group Management",
+          "body": "Effortlessly manage casino group bookings. Organize reservations, track player activity, and streamline coordination for hosted events. Provide VIP-level service by customizing offers, automating check-ins, and ensuring seamless group experiences — while collecting valuable data for targeted marketing and retention.",
+          "image": { "src": "/assets/img/photo-group.jpg", "alt": "A tour group arriving at a casino", "height": 280 },
+          "reverse": false
+        }
+      ]
+    },
+    {
+      "type": "featureList",
+      "sunken": true,
+      "eyebrow": "Core features",
+      "heading": "Built for the Casino Floor",
+      "items": [
+        "Apple iOS compatible",
+        "Respond to & manage event invites for the guest",
+        "Scan barcode or QR",
+        "Create & manage offers and rewards",
+        "Print / reprint card at local printer",
+        "Reset player PIN",
+        "Process jackpot photos",
+        "Capture messaging opt-in",
+        "Track gift continuity",
+        "Hardware warranty available with replacements"
+      ]
+    },
+    {
+      "type": "statStrip",
+      "stats": [
+        { "value": 100, "suffix": "+", "label": "casinos have utilized Playersoft systems" },
+        { "value": 15, "suffix": " years", "label": "serving casinos since 2010" },
+        { "value": 20, "suffix": "+", "label": "states & tribal gaming approved" }
+      ]
+    },
+    {
+      "type": "cta",
+      "skyline": true,
+      "deco": ["c"],
+      "heading": "Ready to Get Started?",
+      "body": "Book a product demonstration and see ONE running on your floor.",
+      "button": { "label": "Book a demo", "url": "/contact/", "variant": "primary", "size": "lg" }
+    }
+  ]
+}

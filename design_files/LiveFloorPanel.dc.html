@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/colors.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/typography.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/effects.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/base.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/styles.css">
+<script src="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/_ds_bundle.js"></script>
+<style>
+@keyframes psPulse { 0%,100% { opacity: 1 } 50% { opacity: .35 } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important }
+}
+</style>
+</helmet>
+<div style="background: var(--surface-inverse-deep); border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); padding: 28px 32px; display: flex; flex-direction: column; gap: 20px; font-family: var(--font-body)">
+  <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px">
+    <span style="font: 600 12px var(--font-body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--aqua-300)">Tonight on the floor</span>
+    <span style="display: flex; align-items: center; gap: 8px; font: 400 13px var(--font-body); color: var(--aqua-300)">
+      <span style="width: 7px; height: 7px; border-radius: 999px; background: var(--aqua-400); animation: psPulse 2s cubic-bezier(0.2,0,0,1) infinite"></span>Live
+    </span>
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px">
+    <sc-for list="{{ metrics }}" as="m" hint-placeholder-count="4">
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <span style="font: 400 12px var(--font-body); color: #9fc4dd">{{ m.label }}</span>
+        <span style="font: 700 30px/1 var(--font-mono); font-variant-numeric: tabular-nums; color: #ebffff">{{ m.value }}</span>
+        <span style="height: 4px; border-radius: 999px; background: rgba(204,255,255,0.16); overflow: hidden">
+          <span style="display: block; height: 100%; border-radius: 999px; background: var(--gradient-aqua); transition: width 320ms cubic-bezier(0.2,0,0,1); width: {{ m.pct }}"></span>
+        </span>
+      </div>
+    </sc-for>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 1100, &quot;height&quot;: 200}}">
+class Component extends DCLogic {
+  state = { tick: 0 };
+  get reduced() {
+    return typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  }
+  componentDidMount() {
+    if (this.reduced) return;
+    this.id = setInterval(() => this.setState(s => ({ tick: s.tick + 1 })), 2600);
+  }
+  componentWillUnmount() { clearInterval(this.id); }
+  renderVals() {
+    const t = this.state.tick;
+    const v = (base, spread, step) => base + ((t * step) % spread);
+    const pct = (base, spread, step) => (base + ((t * step) % spread)) + '%';
+    return {
+      metrics: [
+        { label: 'Enrollments today', value: v(248, 40, 7).toLocaleString(), pct: pct(58, 30, 7) },
+        { label: 'Carded play', value: v(72, 12, 3) + '%', pct: pct(62, 24, 11) },
+        { label: 'Hosts on floor', value: String(v(9, 5, 1)), pct: pct(44, 40, 13) },
+        { label: 'Event check-ins', value: v(1180, 90, 17).toLocaleString(), pct: pct(51, 34, 9) }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+name: Deploy to GitHub Pages
+
+# Builds content/*.json into static HTML and publishes site/ to Pages.
+#
+# ONE-TIME SETUP (in the repo, before this runs):
+#   Settings → Pages → Build and deployment → Source: GitHub Actions
+#
+# If you'd rather not use Actions at all, you can skip this file entirely and
+# serve the pre-built site/ folder directly — see README.md, Option B.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # No dependencies to install — the build is plain Node.
+      - name: Build site
+        run: node build/build.mjs
+
+      # Stops GitHub from running Jekyll, which would ignore _-prefixed files.
+      - name: Add .nojekyll
+        run: touch site/.nojekyll
+
+      - uses: actions/configure-pages@v4
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

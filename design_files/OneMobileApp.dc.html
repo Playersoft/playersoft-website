@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/colors.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/typography.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/effects.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/base.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/styles.css">
+<script src="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/_ds_bundle.js"></script>
+<script src="motion.js"></script>
+<style>
+/* Skyline hero + CTA bands. Scrim is a ::before overlay, not a second
+   background layer — a layer scrim clips to the padding box while the photo
+   clips to the border box, leaving a bright strip along the top border. */
+[data-ps-hero] {
+  position: relative;
+  background-image: url('assets/vegas-skyline.png') !important;
+  background-size: cover !important;
+  background-position: center bottom !important;
+  background-repeat: no-repeat !important;
+  background-origin: border-box !important;
+  background-clip: border-box !important;
+  border-top-color: transparent !important;
+  --text-strong: #ebffff;
+  --text-body: #c9d6e2;
+  --text-muted: #9fc4dd;
+  --color-accent: #5fd6ea;
+  --color-accent-hover: #92e4f2;
+  --color-primary: #1cc0db;
+  --color-primary-hover: #5fd6ea;
+  --color-on-primary: #001222;
+  --text-on-primary: #001222;
+  --border-strong: rgba(235,255,255,0.32);
+}
+[data-ps-hero]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: linear-gradient(180deg, rgba(0,20,40,0.86) 0%, rgba(0,27,51,0.80) 45%, rgba(0,27,51,0.94) 100%);
+}
+[data-ps-hero] > * { position: relative; z-index: 1; }
+[data-ps-hero] [data-ps-hairline] { border-color: rgba(235,255,255,0.22) !important; }
+@keyframes psRise { from { opacity: 0; transform: translateY(10px) } to { opacity: 1; transform: none } }
+@keyframes psPulse { 0%,100% { opacity: 1 } 50% { opacity: .35 } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important }
+}
+</style>
+<title>Playersoft | ONE Mobile App</title>
+</helmet>
+<div data-screen-label="ONE Mobile App" style="background: var(--surface-page); min-height: 100vh">
+<dc-import name="SiteNav" active="one-app" hint-size="100%,110px"></dc-import>
+
+<section data-ps-hero="true" style="position: relative; overflow: hidden; background: linear-gradient(140deg,#ebffff 0%,#f6f8fa 55%,#edf0f3 100%)">
+  <div data-ps-hairline="true" style="position: absolute; right: -120px; top: -120px; width: 560px; height: 560px; opacity: 0.05; border: 2px solid #003366; transform: rotate(18deg) skewY(-8deg); pointer-events: none"></div>
+  <div style="position: relative; max-width: 1440px; margin: 0 auto; padding: 80px 64px 64px; box-sizing: border-box; display: flex; flex-direction: column; gap: 18px">
+    <span style="font: 600 12px var(--font-body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-hover)">SOLUTIONS · PLAYER CONCIERGE APP</span>
+    <h1 style="margin: 0; font: 800 56px/1.05 var(--font-display); letter-spacing: -0.02em; color: var(--text-strong)">ONE Mobile App</h1>
+    <p style="margin: 0; font: 400 18px/1.6 var(--font-body); color: var(--text-body); max-width: 640px; text-wrap: pretty">Three have now become ONE. An award-winning mobile application to manage player enrollments, groups, and events for casino gaming and hospitality venues.</p>
+  </div>
+  <div style="height: 5px; background: var(--gradient-aqua)"></div>
+</section>
+
+<section style="max-width: 1440px; margin: 0 auto; padding: 88px 64px; box-sizing: border-box; display: flex; flex-direction: column; gap: 56px">
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center">
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <span style="font: 600 12px var(--font-body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-hover)">MODULE 01</span>
+      <h2 style="margin: 0; font: 700 30px/1.15 var(--font-display); color: var(--text-strong)">ONE Enrollment</h2>
+      <p style="margin: 0; font: 400 16px/1.55 var(--font-body); font-size: 16px; color: var(--text-body); text-wrap: pretty">Streamline casino club sign-ups with a mobile solution that eliminates long lines and speeds up new member registrations. Capture player data, verify IDs, and set PINs instantly — anywhere on the casino floor. Enhance guest convenience, strengthen loyalty programs, and improve staff efficiency with seamless system integration.</p>
+    </div>
+    <div style="height: 280px; border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-lg)">
+      <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="app-enroll" src="https://static.wixstatic.com/media/11062b_e0c9f3d85ee04e1282f2026e93b4bbe4~mv2.jpg" shape="rect" placeholder="Drop a photo — enrollment on the floor" hint-size="100%,280px"></x-import>
+    </div>
+  </div>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center">
+    <div style="height: 280px; border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-lg)">
+      <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="app-event" src="https://static.wixstatic.com/media/11062b_a1b89b48a66e470fb72c2932dddba814~mv2.jpg" shape="rect" placeholder="Drop a photo — event check-in" hint-size="100%,280px"></x-import>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <span style="font: 600 12px var(--font-body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-hover)">MODULE 02</span>
+      <h2 style="margin: 0; font: 700 30px/1.15 var(--font-display); color: var(--text-strong)">ONE Event Management</h2>
+      <p style="margin: 0; font: 400 16px/1.55 var(--font-body); font-size: 16px; color: var(--text-body); text-wrap: pretty">Simplify event execution with a dynamic platform for casino promotional continuity, tournaments, and special events. Automate RSVPs, manage guest lists, and track attendance in real time — a frictionless experience for both staff and players that maximizes engagement and operational success.</p>
+    </div>
+  </div>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center">
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <span style="font: 600 12px var(--font-body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-hover)">MODULE 03</span>
+      <h2 style="margin: 0; font: 700 30px/1.15 var(--font-display); color: var(--text-strong)">ONE Group Management</h2>
+      <p style="margin: 0; font: 400 16px/1.55 var(--font-body); font-size: 16px; color: var(--text-body); text-wrap: pretty">Effortlessly manage casino group bookings. Organize reservations, track player activity, and streamline coordination for hosted events. Provide VIP-level service by customizing offers, automating check-ins, and ensuring seamless group experiences — while collecting valuable data for targeted marketing and retention.</p>
+    </div>
+    <div style="height: 280px; border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-lg)">
+      <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="app-group" src="https://static.wixstatic.com/media/11062b_c3bc8a21cef440cea1fad997ecc023b6~mv2_d_5118_3049_s_4_2.jpg" shape="rect" placeholder="Drop a photo — group arrival" hint-size="100%,280px"></x-import>
+    </div>
+  </div>
+</section>
+
+<section style="background: var(--surface-sunken); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle)">
+  <div style="max-width: 1440px; margin: 0 auto; padding: 80px 64px; box-sizing: border-box; display: flex; flex-direction: column; gap: 36px">
+    <div style="display: flex; flex-direction: column; gap: 10px">
+      <span style="font: 600 12px var(--font-body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-hover)">CORE FEATURES</span>
+      <h2 style="margin: 0; font: 700 32px/1.15 var(--font-display); color: var(--text-strong)">Built for the Casino Floor</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px 48px; max-width: 1000px">
+      <span style="font: 400 16px/1.55 var(--font-body); font-size: 16px; color: var(--text-body); border-bottom: 1px solid var(--border-subtle); padding: 10px 0"><span style="color: var(--color-accent)">&bull;</span>&nbsp;&nbsp;Apple iOS compatible</span>
+      <span style="font: 400 16px/1.55 var(--font-body); font-size: 16px; color: var(--text-body); border-bottom: 1px solid var(--border-subtle); padding: 10px 0"><span style="color: var(--navy-600)">&bull;</span>&nbsp;&nbsp;Respond to &amp; manage event invites for the guest</span>
+      <span style="font: 400 16px/1.55 var(--font-body); font-size: 16px; color: var(--text-body); border-bottom: 1px solid var(--border-subtle); padding: 10px 0"><span style="color: var(--navy-600)">&bull;</span>&nbsp;&nbsp;Scan barcode or QR</span>
+      <span style="font: 400 16px/1.55 var(--font-body); font-size: 16px; color: var(--text-body); border-bottom: 1px solid var(--border-subtle); padding: 10px 0"><span style="color: var(--color-accent)">&bull;</span>&nbsp;&nbsp;Create &amp; manage offers and rewards</span>
+      <span style="font: 400 16px/1.55 var(--font-body); font-size: 16px; color: var(--text-body); border-bottom: 1px solid var(--border-subtle); padding: 10px 0"><span style="color: var(--color-accent)">&bull;</span>&nbsp;&nbsp;Print / reprint card at local printer</span>
+      <span style="font: 400 16px/1.55 var(--font-body); font-size: 16px; color: var(--text-body); border-bottom: 1px solid var(--border-subtle); padding: 10px 0"><span style="color: var(--navy-600)">&bull;</span>&nbsp;&nbsp;Reset player PIN</span>
+      <span style="font: 400 16px/1.55 var(--font-body); font-size: 16px; color: var(--text-body); border-bottom: 1px solid var(--border-subtle); padding: 10px 0"><span style="color: var(--navy-600)">&bull;</span>&nbsp;&nbsp;Process jackpot photos</span>
+      <span style="font: 400 16px/1.55 var(--font-body); font-size: 16px; color: var(--text-body); border-bottom: 1px solid var(--border-subtle); padding: 10px 0"><span style="color: var(--color-accent)">&bull;</span>&nbsp;&nbsp;Capture messaging opt-in</span>
+      <span style="font: 400 16px/1.55 var(--font-body); font-size: 16px; color: var(--text-body); border-bottom: 1px solid var(--border-subtle); padding: 10px 0"><span style="color: var(--color-accent)">&bull;</span>&nbsp;&nbsp;Track gift continuity</span>
+      <span style="font: 400 16px/1.55 var(--font-body); font-size: 16px; color: var(--text-body); border-bottom: 1px solid var(--border-subtle); padding: 10px 0"><span style="color: var(--navy-600)">&bull;</span>&nbsp;&nbsp;Hardware warranty available with replacements</span>
+    </div>
+  </div>
+</section>
+
+<section style="max-width: 1440px; margin: 0 auto; padding: 72px 64px; box-sizing: border-box; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px">
+  <div style="display: flex; flex-direction: column; gap: 6px; border-left: 3px solid var(--color-primary); padding-left: 20px">
+    <span style="font: 800 48px/1 var(--font-display); color: var(--text-strong)" data-countup="100" data-suffix="+">100+</span>
+    <span style="font: 400 16px/1.55 var(--font-body); color: var(--text-muted)">casinos have utilized Playersoft systems</span>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 6px; border-left: 3px solid var(--color-accent); padding-left: 20px">
+    <span style="font: 800 48px/1 var(--font-display); color: var(--text-strong)" data-countup="15" data-suffix=" years">15 years</span>
+    <span style="font: 400 16px/1.55 var(--font-body); color: var(--text-muted)">serving casinos since 2010</span>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 6px; border-left: 3px solid var(--color-primary); padding-left: 20px">
+    <span style="font: 800 48px/1 var(--font-display); color: var(--text-strong)" data-countup="20" data-suffix="+">20+</span>
+    <span style="font: 400 16px/1.55 var(--font-body); color: var(--text-muted)">states &amp; tribal gaming approved</span>
+  </div>
+</section>
+
+<section data-ps-hero="true" style="position: relative; overflow: hidden; background: linear-gradient(140deg,#ebffff 0%,#f6f8fa 55%,#edf0f3 100%); border-top: 1px solid var(--border-subtle)">
+  <div data-ps-hairline="true" style="position: absolute; left: -140px; bottom: -190px; width: 520px; height: 520px; opacity: 0.05; border: 2px solid #003366; transform: rotate(24deg) skewY(-8deg); pointer-events: none"></div>
+  <div style="position: relative; max-width: 1440px; margin: 0 auto; padding: 80px 64px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center">
+    <h2 style="margin: 0; font: 800 40px/1.1 var(--font-display); color: var(--text-strong)">Ready to Get Started?</h2>
+    <p style="margin: 0; font: 400 17px/1.6 var(--font-body); color: var(--text-body); max-width: 520px; text-wrap: pretty">Book a product demonstration and see ONE running on your floor.</p>
+    <a href="Contact.dc.html" style="text-decoration: none; margin-top: 8px"><x-import component-from-global-scope="PlayersoftDesignSystem_7bdeae.Button" variant="primary" size="lg" hint-size="160px,48px">Book a demo</x-import></a>
+  </div>
+</section>
+
+<dc-import name="SiteFooter" hint-size="100%,420px"></dc-import>
+</div>
+</x-dc>
+</body>
+</html>

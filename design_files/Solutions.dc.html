@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/colors.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/typography.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/effects.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/base.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/styles.css">
+<script src="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/_ds_bundle.js"></script>
+<script src="motion.js"></script>
+<style>
+/* Skyline hero + CTA bands. Scrim is a ::before overlay, not a second
+   background layer — a layer scrim clips to the padding box while the photo
+   clips to the border box, leaving a bright strip along the top border. */
+[data-ps-hero] {
+  position: relative;
+  background-image: url('assets/vegas-skyline.png') !important;
+  background-size: cover !important;
+  background-position: center bottom !important;
+  background-repeat: no-repeat !important;
+  background-origin: border-box !important;
+  background-clip: border-box !important;
+  border-top-color: transparent !important;
+  --text-strong: #ebffff;
+  --text-body: #c9d6e2;
+  --text-muted: #9fc4dd;
+  --color-accent: #5fd6ea;
+  --color-accent-hover: #92e4f2;
+  --color-primary: #1cc0db;
+  --color-primary-hover: #5fd6ea;
+  --color-on-primary: #001222;
+  --text-on-primary: #001222;
+  --border-strong: rgba(235,255,255,0.32);
+}
+[data-ps-hero]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: linear-gradient(180deg, rgba(0,20,40,0.86) 0%, rgba(0,27,51,0.80) 45%, rgba(0,27,51,0.94) 100%);
+}
+[data-ps-hero] > * { position: relative; z-index: 1; }
+[data-ps-hero] [data-ps-hairline] { border-color: rgba(235,255,255,0.22) !important; }
+@keyframes psRise { from { opacity: 0; transform: translateY(10px) } to { opacity: 1; transform: none } }
+@keyframes psPulse { 0%,100% { opacity: 1 } 50% { opacity: .35 } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important }
+}
+</style>
+<title>Playersoft | Solutions</title>
+</helmet>
+<div data-screen-label="Solutions" style="background: var(--surface-page); min-height: 100vh">
+<dc-import name="SiteNav" active="solutions" hint-size="100%,110px"></dc-import>
+
+<section data-ps-hero="true" style="position: relative; overflow: hidden; background: linear-gradient(140deg,#ebffff 0%,#f6f8fa 55%,#edf0f3 100%)">
+  <div data-ps-hairline="true" style="position: absolute; right: -120px; top: -120px; width: 560px; height: 560px; opacity: 0.05; border: 2px solid #003366; transform: rotate(18deg) skewY(-8deg); pointer-events: none"></div>
+  <div style="position: relative; max-width: 1440px; margin: 0 auto; padding: 80px 64px 64px; box-sizing: border-box; display: flex; flex-direction: column; gap: 18px">
+    <span style="font: 600 12px var(--font-body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-hover)">PLAYERSOFT SOLUTIONS</span>
+    <h1 style="margin: 0; font: 800 56px/1.05 var(--font-display); letter-spacing: -0.02em; color: var(--text-strong); max-width: 800px; text-wrap: balance">Loyalty Solutions Powered by ONE System</h1>
+    <div style="display: flex; flex-wrap: wrap; gap: 10px; max-width: 900px; margin-top: 10px">
+      <span style="font: 600 12px/1 var(--font-body); letter-spacing: 0.08em; color: var(--text-body); border: 1px solid var(--border-strong); border-radius: 999px; padding: 8px 14px">SEAMLESS SYSTEM INTEGRATION</span>
+      <span style="font: 600 12px/1 var(--font-body); letter-spacing: 0.08em; color: var(--text-body); border: 1px solid var(--border-strong); border-radius: 999px; padding: 8px 14px">MOBILE &amp; DESKTOP CAPABLE</span>
+      <span style="font: 600 12px/1 var(--font-body); letter-spacing: 0.08em; color: var(--text-body); border: 1px solid var(--border-strong); border-radius: 999px; padding: 8px 14px">DATA-DRIVEN INSIGHTS</span>
+      <span style="font: 600 12px/1 var(--font-body); letter-spacing: 0.08em; color: var(--text-body); border: 1px solid var(--border-strong); border-radius: 999px; padding: 8px 14px">FASTER SERVICE</span>
+      <span style="font: 600 12px/1 var(--font-body); letter-spacing: 0.08em; color: var(--text-body); border: 1px solid var(--border-strong); border-radius: 999px; padding: 8px 14px">MULTI-PROPERTY CONNECTIVITY</span>
+      <span style="font: 600 12px/1 var(--font-body); letter-spacing: 0.08em; color: var(--text-body); border: 1px solid var(--border-strong); border-radius: 999px; padding: 8px 14px">REAL-TIME VIEWS &amp; UPDATES</span>
+      <span style="font: 600 12px/1 var(--font-body); letter-spacing: 0.08em; color: var(--text-body); border: 1px solid var(--border-strong); border-radius: 999px; padding: 8px 14px">BOOSTED PLAYER ENGAGEMENT</span>
+      <span style="font: 600 12px/1 var(--font-body); letter-spacing: 0.08em; color: var(--text-body); border: 1px solid var(--border-strong); border-radius: 999px; padding: 8px 14px">AUTOMATED WORKFLOWS</span>
+      <span style="font: 600 12px/1 var(--font-body); letter-spacing: 0.08em; color: var(--text-body); border: 1px solid var(--border-strong); border-radius: 999px; padding: 8px 14px">PLAYER DEV. MANAGEMENT</span>
+    </div>
+  </div>
+  <div style="height: 5px; background: var(--gradient-aqua)"></div>
+</section>
+
+<section style="max-width: 1440px; margin: 0 auto; padding: 88px 64px; box-sizing: border-box; display: flex; flex-direction: column; gap: 40px">
+  <h2 style="margin: 0; font: 700 36px/1.15 var(--font-display); color: var(--text-strong); max-width: 700px">Designed to Optimize the Player Experience</h2>
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: stretch">
+    <div style="background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: 8px; box-shadow: var(--shadow-sm); overflow: hidden; display: flex; flex-direction: column" data-reveal data-lift>
+      <div style="height: 3px; background: var(--gradient-aqua)"></div>
+      <div style="padding: 28px; display: flex; flex-direction: column; gap: 14px; flex: 1">
+        <span style="font: 600 12px var(--font-body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-hover)">PLAYER CONCIERGE APP</span>
+        <h3 style="margin: 0; font: 700 22px/1.2 var(--font-display); color: var(--text-strong)">ONE Mobile App</h3>
+        <p style="margin: 0; font: 400 16px/1.55 var(--font-body); color: var(--text-body); text-wrap: pretty">Three service modes in one mobile app — manage enrollments, events, and groups from anywhere on the floor.</p>
+        <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px; flex: 1">
+          <span style="font: 400 16px/1.55 var(--font-body); color: var(--text-body)"><span style="color: var(--navy-600)">&bull;</span>&nbsp; Enrollment Service Module</span>
+          <span style="font: 400 16px/1.55 var(--font-body); color: var(--text-body)"><span style="color: var(--color-accent)">&bull;</span>&nbsp; Event Service Module</span>
+          <span style="font: 400 16px/1.55 var(--font-body); color: var(--text-body)"><span style="color: var(--navy-600)">&bull;</span>&nbsp; Group Service Module</span>
+        </div>
+        <a href="OneMobileApp.dc.html" style="text-decoration: none"><x-import component-from-global-scope="PlayersoftDesignSystem_7bdeae.Button" variant="primary" size="md" hint-size="110px,40px">Explore</x-import></a>
+      </div>
+    </div>
+    <div style="background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: 8px; box-shadow: var(--shadow-sm); overflow: hidden; display: flex; flex-direction: column" data-reveal data-lift>
+      <div style="height: 3px; background: var(--gradient-aqua)"></div>
+      <div style="padding: 28px; display: flex; flex-direction: column; gap: 14px; flex: 1">
+        <span style="font: 600 12px var(--font-body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-hover)">STAY CONNECTED &amp; ENGAGED</span>
+        <h3 style="margin: 0; font: 700 22px/1.2 var(--font-display); color: var(--text-strong)">Messaging + Loyalty</h3>
+        <p style="margin: 0; font: 400 16px/1.55 var(--font-body); color: var(--text-body); text-wrap: pretty">Tools to keep your players close — before, during, and after every trip.</p>
+        <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px; flex: 1">
+          <span style="font: 400 16px/1.55 var(--font-body); color: var(--text-body)"><span style="color: var(--color-accent)">&bull;</span>&nbsp; ONE Messaging + Host Chat</span>
+          <span style="font: 400 16px/1.55 var(--font-body); color: var(--text-body)"><span style="color: var(--navy-600)">&bull;</span>&nbsp; ONE Connect</span>
+          <span style="font: 400 16px/1.55 var(--font-body); color: var(--text-body)"><span style="color: var(--color-accent)">&bull;</span>&nbsp; Enrollment Web Service</span>
+        </div>
+        <a href="OneLoyalty.dc.html" style="text-decoration: none"><x-import component-from-global-scope="PlayersoftDesignSystem_7bdeae.Button" variant="primary" size="md" hint-size="110px,40px">Explore</x-import></a>
+      </div>
+    </div>
+    <div style="background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: 8px; box-shadow: var(--shadow-sm); overflow: hidden; display: flex; flex-direction: column" data-reveal data-lift>
+      <div style="height: 3px; background: var(--gradient-aqua)"></div>
+      <div style="padding: 28px; display: flex; flex-direction: column; gap: 14px; flex: 1">
+        <span style="font: 600 12px var(--font-body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-hover)">PLAYER DEVELOPMENT</span>
+        <h3 style="margin: 0; font: 700 22px/1.2 var(--font-display); color: var(--text-strong)">Host-Player Management</h3>
+        <p style="margin: 0; font: 400 16px/1.55 var(--font-body); color: var(--text-body); text-wrap: pretty">The property iTool to develop players as a property — on desktop and mobile.</p>
+        <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px; flex: 1">
+          <span style="font: 400 16px/1.55 var(--font-body); color: var(--text-body)"><span style="color: var(--navy-600)">&bull;</span>&nbsp; Real-time floor &amp; team views</span>
+          <span style="font: 400 16px/1.55 var(--font-body); color: var(--text-body)"><span style="color: var(--color-accent)">&bull;</span>&nbsp; Mobile comp option</span>
+          <span style="font: 400 16px/1.55 var(--font-body); color: var(--text-body)"><span style="color: var(--navy-600)">&bull;</span>&nbsp; Seamless integration to ONE</span>
+        </div>
+        <a href="HPM.dc.html" style="text-decoration: none"><x-import component-from-global-scope="PlayersoftDesignSystem_7bdeae.Button" variant="primary" size="md" hint-size="110px,40px">Explore</x-import></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background: var(--surface-sunken); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle)">
+  <div style="max-width: 1440px; margin: 0 auto; padding: 72px 64px; box-sizing: border-box; display: flex; flex-direction: column; gap: 36px">
+    <h2 style="margin: 0; font: 700 32px/1.15 var(--font-display); color: var(--text-strong)">The Numbers Tell the Story</h2>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px">
+      <div style="display: flex; flex-direction: column; gap: 6px; border-left: 3px solid var(--color-primary); padding-left: 20px">
+        <span style="font: 800 48px/1 var(--font-display); color: var(--text-strong)" data-countup="100" data-suffix="+">100+</span>
+        <span style="font: 400 16px/1.55 var(--font-body); color: var(--text-muted)">casinos have utilized Playersoft solutions</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px; border-left: 3px solid var(--color-accent); padding-left: 20px">
+        <span style="font: 800 48px/1 var(--font-display); color: var(--text-strong)" data-countup="15" data-suffix=" years">15 years</span>
+        <span style="font: 400 16px/1.55 var(--font-body); color: var(--text-muted)">serving casinos since 2010</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px; border-left: 3px solid var(--color-primary); padding-left: 20px">
+        <span style="font: 800 48px/1 var(--font-display); color: var(--text-strong)" data-countup="20" data-suffix="+">20+</span>
+        <span style="font: 400 16px/1.55 var(--font-body); color: var(--text-muted)">states &amp; tribal gaming approved</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-ps-hero="true" style="position: relative; overflow: hidden; background: linear-gradient(140deg,#ebffff 0%,#f6f8fa 55%,#edf0f3 100%)">
+  <div data-ps-hairline="true" style="position: absolute; left: -140px; bottom: -190px; width: 520px; height: 520px; opacity: 0.05; border: 2px solid #003366; transform: rotate(24deg) skewY(-8deg); pointer-events: none"></div>
+  <div style="position: relative; max-width: 1440px; margin: 0 auto; padding: 80px 64px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center">
+    <h2 style="margin: 0; font: 800 40px/1.1 var(--font-display); color: var(--text-strong)">Ready to Get Started?</h2>
+    <p style="margin: 0; font: 400 17px/1.6 var(--font-body); color: var(--text-body); max-width: 520px; text-wrap: pretty">Book a product demonstration and see ONE running on your floor.</p>
+    <a href="Contact.dc.html" style="text-decoration: none; margin-top: 8px"><x-import component-from-global-scope="PlayersoftDesignSystem_7bdeae.Button" variant="primary" size="lg" hint-size="160px,48px">Book a demo</x-import></a>
+  </div>
+</section>
+
+<dc-import name="SiteFooter" hint-size="100%,420px"></dc-import>
+</div>
+</x-dc>
+</body>
+</html>

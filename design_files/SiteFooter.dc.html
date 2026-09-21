@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/colors.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/typography.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/effects.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/base.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/styles.css">
+<script src="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/_ds_bundle.js"></script>
+</helmet>
+<footer style="background: var(--surface-sunken); border-top: 1px solid var(--border-subtle)">
+  <div style="max-width: 1440px; margin: 0 auto; padding: 56px 64px 32px; box-sizing: border-box">
+    <div style="display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 48px">
+      <div style="display: flex; flex-direction: column; gap: 16px">
+        <div style="display: flex; align-items: center; gap: 10px">
+          <span data-ps-logo="true" style="{{ logoWrap }}"><img src="{{ logoSrc }}" alt="Playersoft" style="height: 32px; display: block"></span>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <div style="font: 600 12px var(--font-body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted)">QUICK LINKS</div>
+        <a href="Home.dc.html" style="font: 400 16px/1.55 var(--font-body); color: var(--text-body); text-decoration: none" style-hover="color: var(--text-strong)">Home</a>
+        <a href="About.dc.html" style="font: 400 16px/1.55 var(--font-body); color: var(--text-body); text-decoration: none" style-hover="color: var(--text-strong)">About</a>
+        <a href="Solutions.dc.html" style="font: 400 16px/1.55 var(--font-body); color: var(--text-body); text-decoration: none" style-hover="color: var(--text-strong)">Solutions</a>
+        <a href="Contact.dc.html" style="font: 400 16px/1.55 var(--font-body); color: var(--text-body); text-decoration: none" style-hover="color: var(--text-strong)">Contact</a>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <div style="font: 600 12px var(--font-body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted)">CONTACT</div>
+        <a href="mailto:Info@playersoft.com" style="font: 400 16px/1.55 var(--font-body); color: var(--text-body); text-decoration: none" style-hover="color: var(--text-strong)">Info@playersoft.com</a>
+        <span style="font: 400 16px/1.55 var(--font-body); color: var(--text-body)">866-711-4919</span>
+        <span style="font: 400 16px/1.55 var(--font-body); color: var(--text-body)">504 Mission Ave, Suite 200<br>Escondido, CA 92025</span>
+        <a href="https://www.linkedin.com/company/playersoft-technologies" style="font: 400 16px/1.55 var(--font-body); color: var(--color-accent); text-decoration: none" style-hover="color: var(--aqua-500)">LinkedIn ↗</a>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <div style="font: 600 12px var(--font-body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted)">POLICY</div>
+        <span style="font: 400 16px/1.55 var(--font-body); color: var(--text-body)">Terms &amp; Conditions</span>
+        <span style="font: 400 16px/1.55 var(--font-body); color: var(--text-body)">Privacy Policy</span>
+        <span style="font: 400 16px/1.55 var(--font-body); color: var(--text-body)">Accessibility Statement</span>
+      </div>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border-subtle)">
+      <span style="font: 400 14px/1.5 var(--font-body); color: var(--text-muted)">© 2026 Playersoft Technologies</span>
+    </div>
+  </div>
+  <div style="height: 4px; background: var(--gradient-aqua)"></div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 1280, &quot;height&quot;: 380}}">class Component extends DCLogic {
+  renderVals() {
+    return {
+      logoSrc: 'assets/logo-red-full.png',
+      logoWrap: 'display: flex; align-items: center'
+    };
+  }
+}</script>
+</body>
+</html>

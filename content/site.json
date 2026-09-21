@@ -1,0 +1,129 @@
+{
+  "site": {
+    "name": "Playersoft Technologies",
+    "titleSuffix": "Playersoft",
+    "baseUrl": "https://www.playersoft.com",
+    "description": "Award-winning mobile solutions that simplify casino operations and elevate the player experience.",
+    "logo": "/assets/img/logo-red-full.png",
+    "logoAlt": "Playersoft",
+    "favicon": "/assets/img/logo-red-mark.png",
+    "basePath": ""
+  },
+  "nav": [
+    {
+      "label": "Home",
+      "url": "/",
+      "key": "home"
+    },
+    {
+      "label": "About",
+      "url": "/about/",
+      "key": "about"
+    },
+    {
+      "label": "Solutions",
+      "url": "/solutions/",
+      "key": "solutions"
+    },
+    {
+      "label": "Contact",
+      "url": "/contact/",
+      "key": "contact"
+    }
+  ],
+  "navButton": {
+    "label": "Book a Demo",
+    "url": "/contact/"
+  },
+  "subnav": {
+    "label": "Solutions",
+    "items": [
+      {
+        "label": "ONE Mobile App",
+        "url": "/solutions/one-mobile-app/",
+        "key": "one-mobile-app"
+      },
+      {
+        "label": "ONE Messaging + Loyalty",
+        "url": "/solutions/one-messaging-loyalty/",
+        "key": "one-messaging-loyalty"
+      },
+      {
+        "label": "Host-Player Management",
+        "url": "/solutions/host-player-management/",
+        "key": "host-player-management"
+      }
+    ]
+  },
+  "footer": {
+    "columns": [
+      {
+        "heading": "Quick links",
+        "links": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "About",
+            "url": "/about/"
+          },
+          {
+            "label": "Solutions",
+            "url": "/solutions/"
+          },
+          {
+            "label": "Contact",
+            "url": "/contact/"
+          }
+        ]
+      },
+      {
+        "heading": "Contact",
+        "links": [
+          {
+            "label": "Info@playersoft.com",
+            "url": "mailto:Info@playersoft.com"
+          },
+          {
+            "label": "866-711-4919",
+            "url": "tel:8667114919"
+          },
+          {
+            "label": "504 Mission Ave, Suite 200, Escondido, CA 92025",
+            "url": null
+          },
+          {
+            "label": "LinkedIn",
+            "url": "https://www.linkedin.com/company/playersoft-technologies"
+          }
+        ]
+      },
+      {
+        "heading": "Policy",
+        "links": [
+          {
+            "label": "Terms & Conditions",
+            "url": "/terms/"
+          },
+          {
+            "label": "Privacy Policy",
+            "url": "/privacy/"
+          },
+          {
+            "label": "Accessibility Statement",
+            "url": "/accessibility/"
+          }
+        ]
+      }
+    ],
+    "copyright": "© 2026 Playersoft Technologies"
+  },
+  "_notes": {
+    "policyLinks": "Terms / Privacy / Accessibility point at pages that do not exist yet. Create them or update these URLs before launch.",
+    "partners": "A Partners page exists on the current live site but was intentionally removed from this redesign. Do not re-add the nav link without asking.",
+    "basePath": "GitHub Pages: leave \"\" for a custom domain (playersoft.com) or a user/org site (playersoft.github.io). Set to \"/repo-name\" for a project site served at username.github.io/repo-name/. Rebuild after changing — it rewrites every asset path, link, canonical tag, and sitemap URL.",
+    "forms": "GitHub Pages serves static files only — it cannot process form submissions. The contact and newsletter forms need a third-party endpoint (Formspree, Basin, Getform) or they will do nothing. See README.md step 4.",
+    "newsletter": "The newsletter / \"The Play\" email signup was removed from this redesign at the client's request, along with the News page. Nothing on the site collects email addresses now except the contact form."
+  }
+}

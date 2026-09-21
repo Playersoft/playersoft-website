@@ -1,0 +1,39 @@
+/* Playersoft — base element defaults & utility helpers.
+   Kept minimal: sets brand typography, link colors, and a few helpers. */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-body);
+  background: var(--surface-page);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  color: var(--text-strong);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  margin: 0;
+}
+
+a { color: var(--text-link); text-decoration: none; transition: color var(--dur-fast) var(--ease-standard); }
+a:hover { color: var(--text-link-hover); }
+
+/* Eyebrow / overline label */
+.ps-eyebrow {
+  font-family: var(--font-body);
+  font-weight: var(--weight-semibold);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--color-accent-hover);
+}
+
+/* Tabular numerals for data/points */
+.ps-num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+
+::selection { background: var(--cyan-100); color: var(--navy-900); }

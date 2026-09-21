@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/colors.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/typography.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/effects.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/base.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/styles.css">
+<script src="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/_ds_bundle.js"></script>
+<title>Playersoft | Mobile Views</title>
+</helmet>
+<div data-screen-label="Mobile Views" style="background: linear-gradient(135deg,#FFFFFF 0%,#F2F3F6 60%,#EAEBEF 100%); min-height: 100vh; padding: 48px 40px 72px; box-sizing: border-box; display: flex; flex-direction: column; gap: 36px; align-items: center">
+  <div style="display: flex; flex-direction: column; gap: 10px; align-items: center; text-align: center; max-width: 640px">
+    <span style="font: 600 12px var(--font-body); letter-spacing: 0.08em; text-transform: uppercase; color: #6E7078">PLAYERSOFT.COM REDESIGN · ONE MOBILE APP</span>
+    <h1 style="margin: 0; font: 800 36px/1.1 var(--font-display); color: #121216">The Real App, Live in the Mockup</h1>
+    <p style="margin: 0; font: 400 16px/1.6 var(--font-body); color: #3E3E4A; text-wrap: pretty">These are working screens from the Playersoft ONE redesign — tap the tab bar to move between Identify, Events, Groups, Floor, and More. <a href="Home.dc.html" style="color: #B87A14; font-weight: 600">Back to desktop site</a></p>
+  </div>
+  <div style="display: flex; gap: 56px; flex-wrap: wrap; justify-content: center; align-items: flex-start">
+    <div style="display: flex; flex-direction: column; gap: 12px; align-items: center">
+      <span style="font: 600 11px var(--font-body); letter-spacing: 0.14em; color: #6E7078">IDENTIFY GUEST · LIGHT</span>
+      <x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="390px,844px">
+        <dc-import name="OneApp" brand="branded" accent="seaglass" theme="light" initial-tab="identify" hint-size="100%,100%" style="height:100%"></dc-import>
+      </x-import>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 12px; align-items: center">
+      <span style="font: 600 11px var(--font-body); letter-spacing: 0.14em; color: #6E7078">EVENTS · LIGHT</span>
+      <x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="390px,844px">
+        <dc-import name="OneApp" brand="branded" accent="seaglass" theme="light" initial-tab="events" hint-size="100%,100%" style="height:100%"></dc-import>
+      </x-import>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 12px; align-items: center">
+      <span style="font: 600 11px var(--font-body); letter-spacing: 0.14em; color: #6E7078">LIVE FLOOR · DARK</span>
+      <x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="{{ true }}" hint-size="390px,844px">
+        <dc-import name="OneApp" brand="branded" accent="seaglass" theme="dark" initial-tab="floor" hint-size="100%,100%" style="height:100%"></dc-import>
+      </x-import>
+    </div>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,7 @@
+/* Playersoft — Webfonts
+   No brand font files were provided. Substituted from Google Fonts:
+   - Sora   → display / headings (geometric, confident, techy)
+   - Figtree → body / UI text (clean, friendly, professional)
+   - JetBrains Mono → numeric / data (points, IDs, tables)
+   Flagged to user: replace with licensed brand fonts if they exist. */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');

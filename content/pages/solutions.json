@@ -1,0 +1,91 @@
+{
+  "slug": "solutions",
+  "url": "/solutions/",
+  "navKey": "solutions",
+  "subnavKey": null,
+  "title": "Solutions | Loyalty Software Powered by Playersoft ONE",
+  "description": "Loyalty solutions powered by ONE System — mobile enrollment, messaging, and host-player management for casino operators.",
+  "sections": [
+    {
+      "type": "hero",
+      "skyline": true,
+      "deco": ["a"],
+      "variant": "page",
+      "eyebrow": "Playersoft solutions",
+      "heading": "Loyalty Solutions Powered by ONE System",
+      "chips": [
+        "Seamless system integration",
+        "Mobile & desktop capable",
+        "Data-driven insights",
+        "Faster service",
+        "Multi-property connectivity",
+        "Real-time views & updates",
+        "Boosted player engagement",
+        "Automated workflows",
+        "Player dev. management"
+      ]
+    },
+    {
+      "type": "cardGrid",
+      "heading": "Designed to Optimize the Player Experience",
+      "columns": 3,
+      "strip": true,
+      "cards": [
+        {
+          "eyebrow": "Player concierge app",
+          "title": "ONE Mobile App",
+          "body": "Three service modes in one mobile app — manage enrollments, events, and groups from anywhere on the floor.",
+          "list": [
+            "Enrollment Service Module",
+            "Event Service Module",
+            "Group Service Module"
+          ],
+          "button": { "label": "Explore", "url": "/solutions/one-mobile-app/", "variant": "primary" }
+        },
+        {
+          "eyebrow": "Stay connected & engaged",
+          "title": "Messaging + Loyalty",
+          "body": "Tools to keep your players close — before, during, and after every trip.",
+          "list": [
+            "ONE Messaging + Host Chat",
+            "ONE Connect",
+            "Enrollment Web Service"
+          ],
+          "button": { "label": "Explore", "url": "/solutions/one-messaging-loyalty/", "variant": "primary" }
+        },
+        {
+          "eyebrow": "Player development",
+          "title": "Host-Player Management",
+          "body": "The property iTool to develop players as a property — on desktop and mobile.",
+          "list": [
+            "Real-time floor & team views",
+            "Mobile comp option",
+            "Seamless integration to ONE"
+          ],
+          "button": { "label": "Explore", "url": "/solutions/host-player-management/", "variant": "primary" }
+        }
+      ]
+    },
+    {
+      "type": "statStrip",
+      "sunken": true,
+      "heading": "The Numbers Tell the Story",
+      "stats": [
+        { "value": 100, "suffix": "+", "label": "casinos have utilized Playersoft solutions" },
+        { "value": 15, "suffix": " years", "label": "serving casinos since 2010" },
+        { "value": 20, "suffix": "+", "label": "states & tribal gaming approved" }
+      ]
+    },
+    {
+      "type": "cta",
+      "skyline": true,
+      "deco": ["c"],
+      "heading": "Ready to Get Started?",
+      "body": "Book a product demonstration and see ONE running on your floor.",
+      "button": { "label": "Book a demo", "url": "/contact/", "variant": "primary", "size": "lg" }
+    }
+  ],
+  "_notes": {
+    "loyaltyFeatures": "The Messaging + Loyalty card lists exactly three features. ONE Card, Hotel Enrollment, and Loyalty Kiosk were removed from this redesign at the client's request — do not reintroduce them."
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "_purpose": "Maps every image the built site expects to its source on the current playersoft.com. Download each source URL, save it to the local path, and the site renders complete. Until then those <img> tags 404 — the layout still holds because every image slot has a fixed height.",
+  "_note": "Source URLs are the client's existing Wix CDN assets, already licensed and in use. Re-host them on your static host rather than hotlinking Wix.",
+  "photography": [
+    {
+      "local": "site/assets/img/photo-team-floor.jpg",
+      "source": "https://static.wixstatic.com/media/11062b_672318ddebff4b38bb2b9816ad4ca954~mv2.jpg",
+      "usedOn": "Home — Why Playersoft",
+      "alt": "Casino staff using Playersoft ONE on the floor",
+      "recommendedSize": "1200×760"
+    },
+    {
+      "local": "site/assets/img/photo-team.jpg",
+      "source": "https://static.wixstatic.com/media/11062b_187fbaba5d8c44398cffafbd381528af~mv2.jpeg",
+      "usedOn": "About — Who We Are",
+      "alt": "The Playersoft team",
+      "recommendedSize": "1200×760"
+    },
+    {
+      "local": "site/assets/img/photo-partners.jpg",
+      "source": "https://static.wixstatic.com/media/3c6ada28ceb647b9942b2a23290d3184.jpg",
+      "usedOn": "About — Our Allies",
+      "alt": "Integration partners at work",
+      "recommendedSize": "1200×600"
+    },
+    {
+      "local": "site/assets/img/photo-enrollment.jpg",
+      "source": "https://static.wixstatic.com/media/11062b_e0c9f3d85ee04e1282f2026e93b4bbe4~mv2.jpg",
+      "usedOn": "ONE Mobile App — Module 01",
+      "alt": "Staff enrolling a player on the casino floor",
+      "recommendedSize": "1200×560"
+    },
+    {
+      "local": "site/assets/img/photo-event.jpg",
+      "source": "https://static.wixstatic.com/media/11062b_a1b89b48a66e470fb72c2932dddba814~mv2.jpg",
+      "usedOn": "ONE Mobile App — Module 02",
+      "alt": "Event check-in at a casino",
+      "recommendedSize": "1200×560"
+    },
+    {
+      "local": "site/assets/img/photo-group.jpg",
+      "source": "https://static.wixstatic.com/media/11062b_c3bc8a21cef440cea1fad997ecc023b6~mv2_d_5118_3049_s_4_2.jpg",
+      "usedOn": "ONE Mobile App — Module 03",
+      "alt": "A tour group arriving at a casino",
+      "recommendedSize": "1200×560"
+    },
+    {
+      "local": "site/assets/img/photo-hpm-floor.jpg",
+      "source": "https://static.wixstatic.com/media/11062b_7a56e8ec12ef4d00b2ec73822f42de31~mv2.jpg",
+      "usedOn": "HPM — Real-Time Views of Your Floor",
+      "alt": "Host-Player Management floor view",
+      "recommendedSize": "1200×560"
+    }
+  ],
+  "appScreens": {
+    "_status": "PLACEHOLDER — needs real product screenshots",
+    "_detail": "The phone mockup on the Home hero expects five screenshots at 402×874 (or any 1:2.17 ratio). The mockups in design_files/ contain hand-built recreations of the CURRENT production UI, made to demonstrate the frame — they are not exportable as images. Ask Playersoft for real screenshots, or screenshot the app directly.",
+    "files": [
+      {
+        "local": "site/assets/img/app-login.png",
+        "screen": "Login"
+      },
+      {
+        "local": "site/assets/img/app-identify.png",
+        "screen": "Identify Guest — the default screen"
+      },
+      {
+        "local": "site/assets/img/app-events.png",
+        "screen": "Events"
+      },
+      {
+        "local": "site/assets/img/app-groups.png",
+        "screen": "Groups"
+      },
+      {
+        "local": "site/assets/img/app-floor.png",
+        "screen": "Live floor"
+      }
+    ],
+    "_removed": "A 'More / Settings' screen was deliberately removed from the carousel at the client's request. Do not add it back."
+  },
+  "shipped": [
+    {
+      "local": "site/assets/img/logo-red-full.png",
+      "note": "Original red lockup — header, footer. The client's explicit choice against the navy palette."
+    },
+    {
+      "local": "site/assets/img/logo-red-mark.png",
+      "note": "Cube mark — favicon, app icon."
+    },
+    {
+      "local": "site/assets/img/vegas-skyline.png",
+      "note": "Hero + CTA background. Always under the navy scrim."
+    },
+    {
+      "local": "site/assets/img/logo-navy.svg",
+      "note": "Design-system navy lockup. Currently unused."
+    },
+    {
+      "local": "site/assets/img/logo-white.svg",
+      "note": "Design-system inverse lockup. Currently unused."
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/colors.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/typography.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/effects.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/tokens/base.css">
+<link rel="stylesheet" href="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/styles.css">
+<script src="_ds/playersoft-design-system-7bdeae32-bbd5-4dce-afd3-f737bbc3977c/_ds_bundle.js"></script>
+</helmet>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 18px; font-family: var(--font-body)">
+  <div style="position: relative; display: flex; align-items: center; justify-content: center; min-width: 0; max-width: 100%">
+    <button onClick="{{ prev }}" aria-label="Previous screen" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); z-index: 3; width: 48px; height: 48px; border-radius: 999px; border: 1px solid rgba(0,26,51,0.18); background: #ffffff; color: #001b33; font-size: 20px; cursor: pointer; box-shadow: var(--shadow-md); display: flex; align-items: center; justify-content: center" style-hover="border-color: #003366; color: #003366">&#8592;</button>
+    <div style="transform: scale(0.82); transform-origin: center center; width: 424px; max-width: 100%; filter: drop-shadow(0 34px 70px rgba(0,26,51,0.28))">
+      <div style="position: relative; padding: 11px; border-radius: 62px; background: linear-gradient(145deg,#f0f1f3 0%,#c3c6cc 16%,#8d9096 33%,#e4e6e9 50%,#8a8d93 67%,#c3c6cc 84%,#eef0f2 100%); box-shadow: inset 0 0 0 1.5px rgba(255,255,255,0.45), inset 0 1px 3px rgba(0,0,0,0.35), inset 0 -1px 3px rgba(0,0,0,0.3)">
+        <div style="position: absolute; left: -2.5px; top: 138px; width: 4px; height: 32px; border-radius: 3px; background: linear-gradient(90deg,#6f7278,#a7aab0)"></div>
+        <div style="position: absolute; left: -2.5px; top: 190px; width: 4px; height: 58px; border-radius: 3px; background: linear-gradient(90deg,#6f7278,#a7aab0)"></div>
+        <div style="position: absolute; left: -2.5px; top: 262px; width: 4px; height: 58px; border-radius: 3px; background: linear-gradient(90deg,#6f7278,#a7aab0)"></div>
+        <div style="position: absolute; right: -2.5px; top: 210px; width: 4px; height: 92px; border-radius: 3px; background: linear-gradient(270deg,#6f7278,#a7aab0)"></div>
+        <div style="position: absolute; right: -3px; top: 330px; width: 5px; height: 46px; border-radius: 3px; background: linear-gradient(270deg,#5f6268,#b4b7bd)"></div>
+        <div style="border-radius: 51px; overflow: hidden; position: relative; box-shadow: 0 0 0 2px #0a0a0c">
+          <x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+            <div style="height: 100%; overflow: hidden; position: relative">
+              <div style="display: flex; height: 100%; transition: transform 0.42s var(--ease-standard); transform: translateX({{ shift }})">
+
+                <!-- LOGIN -->
+                <div style="flex: 0 0 100%; height: 100%; background: #fff; display: flex; flex-direction: column; align-items: center; padding: 130px 20px 0; box-sizing: border-box; overflow: hidden">
+                  <img src="assets/playersoft-logo.png" alt="Playersoft" style="width: 273px; height: 60px; object-fit: contain">
+                  <div style="height: 50px"></div>
+                  <div style="width: 100%; display: flex; flex-direction: column; gap: 10px">
+                    <input placeholder="Username" style="height: 48px; border: 1px solid #c7c7cc; border-radius: 6px; padding: 0 12px; font-size: 14px; font-family: inherit; background: #fff; color: #000; box-sizing: border-box">
+                    <input placeholder="Password" type="password" style="height: 48px; border: 1px solid #c7c7cc; border-radius: 6px; padding: 0 12px; font-size: 14px; font-family: inherit; background: #fff; color: #000; box-sizing: border-box">
+                    <div style="height: 48px; background: #007AFF; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 17px">Login</div>
+                    <div style="font-size: 13px; color: #aaa">Version 4.2.1 (874)</div>
+                  </div>
+                </div>
+
+                <!-- IDENTIFY -->
+                <div style="flex: 0 0 100%; height: 100%; background: #fff; display: flex; flex-direction: column; box-sizing: border-box; overflow: hidden">
+                  <div style="padding: 70px 16px 0; display: flex; flex-direction: column; gap: 10px">
+                    <div style="text-align: center; font-size: 17px; font-weight: 600; color: #000">Identify Guest</div>
+                    <div style="height: 36px; background: #7676801f; border-radius: 10px; display: flex; align-items: center; gap: 6px; padding: 0 8px; color: #8e8e93; font-size: 17px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8e8e93" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block; flex-shrink: 0" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>Search player ID</div>
+                  </div>
+                  <div style="flex: 1; display: flex; flex-direction: column; align-items: center; padding: 20px 16px 0">
+                    <div style="font-size: 20px; font-weight: 500; color: #000">Swipe a Player Card</div>
+                    <div style="margin-top: 20px; width: 300px; height: 150px; border: 1px solid #007AFF; border-radius: 10px; display: flex; align-items: center; justify-content: center">
+                      <svg width="120" height="80" viewBox="0 0 120 80"><rect x="20" y="14" width="80" height="52" rx="6" fill="none" stroke="#007AFF" stroke-width="2"></rect><rect x="20" y="26" width="80" height="10" fill="#007AFF"></rect><path d="M104 40h12m-5-5 5 5-5 5" stroke="#007AFF" stroke-width="2" fill="none"></path></svg>
+                    </div>
+                    <div style="margin-top: 8px; font-size: 17px; color: #000">Ready to scan</div>
+                  </div>
+                  <div style="padding: 0 25px 25px; display: flex; flex-direction: column; gap: 10px">
+                    <div style="font-size: 17px; color: #000">Scan document:</div>
+                    <div style="display: flex; gap: 8px">
+                      <div style="flex: 1; height: 50px; background: #007AFF; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 17px">ID card</div>
+                      <div style="flex: 1; height: 50px; background: #007AFF; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 17px">Passport</div>
+                    </div>
+                    <div style="height: 50px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #007AFF; font-size: 17px; background: rgba(255,255,255,.7)">Enter manually</div>
+                  </div>
+                  <dc-import name="CurrentTabBar" active="identify" hint-size="100%,83px"></dc-import>
+                </div>
+
+                <!-- EVENTS -->
+                <div style="flex: 0 0 100%; height: 100%; background: #f2f2f7; display: flex; flex-direction: column; box-sizing: border-box; overflow: hidden">
+                  <div style="background: #fff; padding: 64px 16px 8px"><div style="font-size: 34px; font-weight: 700; color: #000; letter-spacing: .4px">Events</div></div>
+                  <div style="flex: 1; overflow: hidden; padding: 8px 16px; display: flex; flex-direction: column; gap: 16px">
+                    <sc-for list="{{ events }}" as="ev" hint-placeholder-count="3">
+                      <div style="background: #fff; border-radius: 10px; padding: 13px 15px; display: flex; flex-direction: column; gap: 0">
+                        <div style="display: flex; justify-content: space-between; gap: 2px">
+                          <div style="font-size: 17px; font-weight: 700; color: #000">{{ ev.name }}</div>
+                          <div style="font-size: 17px; font-weight: 500; color: {{ ev.statusColor }}">{{ ev.status }}</div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 5px; margin-top: 15px">
+                          <img src="assets/icon-users-light.png" style="width: 30px; height: 30px; object-fit: contain">
+                          <div style="font-size: 15px; font-weight: 600; color: #000">{{ ev.guests }} guests</div>
+                        </div>
+                        <div style="display: flex; margin-top: 8px">
+                          <div style="flex: 1; display: flex; flex-direction: column; gap: 5px"><div style="font-size: 13px; font-weight: 500; color: #3c3c4399">Start</div><div style="font-size: 15px; font-weight: 600; color: #000">{{ ev.start }}</div></div>
+                          <div style="flex: 1; display: flex; flex-direction: column; gap: 5px; text-align: center"><div style="font-size: 13px; font-weight: 500; color: #3c3c4399">Check-in</div><div style="font-size: 15px; font-weight: 600; color: #000">{{ ev.checkin }}</div></div>
+                          <div style="flex: 1; display: flex; flex-direction: column; gap: 5px; text-align: right"><div style="font-size: 13px; font-weight: 500; color: #3c3c4399">Wait list</div><div style="font-size: 15px; font-weight: 600; color: #000">{{ ev.waitlist }}</div></div>
+                        </div>
+                      </div>
+                    </sc-for>
+                  </div>
+                  <dc-import name="CurrentTabBar" active="events" hint-size="100%,83px"></dc-import>
+                </div>
+
+                <!-- GROUPS -->
+                <div style="flex: 0 0 100%; height: 100%; background: #f2f2f7; display: flex; flex-direction: column; box-sizing: border-box; overflow: hidden">
+                  <div style="background: #fff; padding: 64px 16px 8px"><div style="font-size: 34px; font-weight: 700; color: #000; letter-spacing: .4px">Groups</div></div>
+                  <div style="flex: 1; overflow: hidden; padding: 8px 16px; display: flex; flex-direction: column; gap: 16px">
+                    <sc-for list="{{ groups }}" as="g" hint-placeholder-count="3">
+                      <div style="background: #fff; border-radius: 10px; padding: 13px 15px; display: flex; flex-direction: column; gap: 6px">
+                        <div style="display: flex; justify-content: space-between"><div style="font-size: 17px; font-weight: 700; color: #000">{{ g.name }}</div><div style="font-size: 15px; font-weight: 500; color: {{ g.statusColor }}">{{ g.status }}</div></div>
+                        <div style="font-size: 15px; color: #3c3c4399">{{ g.route }}</div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 4px">
+                          <div style="display: flex; align-items: center; gap: 5px"><img src="assets/icon-users-light.png" style="width: 24px; height: 24px; object-fit: contain"><div style="font-size: 15px; font-weight: 600; color: #000">{{ g.passengers }} passengers</div></div>
+                          <div style="font-size: 15px; font-weight: 600; color: #000">{{ g.arrival }}</div>
+                        </div>
+                      </div>
+                    </sc-for>
+                  </div>
+                  <dc-import name="CurrentTabBar" active="groups" hint-size="100%,83px"></dc-import>
+                </div>
+
+                <!-- FLOOR -->
+                <div style="flex: 0 0 100%; height: 100%; background: #f2f2f7; display: flex; flex-direction: column; box-sizing: border-box; overflow: hidden">
+                  <div style="background: #fff; padding: 64px 16px 8px"><div style="font-size: 34px; font-weight: 700; color: #000; letter-spacing: .4px">Floor</div></div>
+                  <div style="flex: 1; overflow: hidden; padding: 0 16px">
+                    <div style="padding: 28px 0 16px; font-size: 21px; font-weight: 700; color: #000">Uncarded machines</div>
+                    <div style="display: flex; flex-direction: column">
+                      <sc-for list="{{ machines }}" as="m" hint-placeholder-count="5">
+                        <div style="background: #fff; height: 50px; display: flex; align-items: center; justify-content: space-between; padding: 0 15px; border-bottom: 1px solid #c6c6c8; border-radius: {{ m.radius }}">
+                          <div style="font-size: 17px; color: #000">{{ m.code }}</div>
+                          <div style="display: flex; align-items: center; gap: 8px"><div style="font-size: 17px; color: #8e8e93">{{ m.amount }}</div><img src="assets/icon-arrow-right.png" style="width: 14px; height: 14px; object-fit: contain; opacity: .4"></div>
+                        </div>
+                      </sc-for>
+                    </div>
+                  </div>
+                  <dc-import name="CurrentTabBar" active="floor" hint-size="100%,83px"></dc-import>
+                </div>
+
+              </div>
+            </div>
+          </x-import>
+        </div>
+      </div>
+    </div>
+    <button onClick="{{ next }}" aria-label="Next screen" style="position: absolute; right: 0; top: 50%; transform: translateY(-50%); z-index: 3; width: 48px; height: 48px; border-radius: 999px; border: 1px solid rgba(0,26,51,0.18); background: #ffffff; color: #001b33; font-size: 20px; cursor: pointer; box-shadow: var(--shadow-md); display: flex; align-items: center; justify-content: center" style-hover="border-color: #003366; color: #003366">&#8594;</button>
+  </div>
+  <div style="display: flex; align-items: center; gap: 14px">
+    <span style="font: 600 11px var(--font-body); letter-spacing: 0.14em; color: var(--text-muted)">PLAYERSOFT - ONE</span>
+    <span style="font: 600 13px var(--font-body); color: var(--text-strong); min-width: 80px; text-align: center">{{ label }}</span>
+    <div style="display: flex; gap: 6px">
+      <sc-for list="{{ dots }}" as="d" hint-placeholder-count="6">
+        <span style="width: 7px; height: 7px; border-radius: 999px; background: {{ d.color }}"></span>
+      </sc-for>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 560, &quot;height&quot;: 820}}">
+class Component extends DCLogic {
+  state = { idx: 1 };
+  get names() { return ['Login', 'Identify', 'Events', 'Groups', 'Floor']; }
+  renderVals() {
+    const n = this.names.length;
+    const idx = this.state.idx;
+    const events = [
+      {name:"Summer Slot Tournament", status:"Open", statusColor:"#34C759", guests:128, start:"10:00 AM", checkin:"9:00 AM", waitlist:"12"},
+      {name:"VIP Prime Rib Dinner", status:"Open", statusColor:"#34C759", guests:64, start:"6:30 PM", checkin:"5:30 PM", waitlist:"4"},
+      {name:"Firecracker Fireworks Gala", status:"Closed", statusColor:"#FF3B30", guests:212, start:"9:00 PM", checkin:"7:45 PM", waitlist:"0"}
+    ];
+    const groups = [
+      {name:"Golden Coach Tours", status:"Arrived", statusColor:"#34C759", route:"Sacramento → Byron Bay", passengers:48, arrival:"10:30 AM"},
+      {name:"Lucky 8 Charters", status:"En route", statusColor:"#FF9500", route:"San Jose → Byron Bay", passengers:52, arrival:"11:15 AM"},
+      {name:"Sierra Senior Club", status:"Scheduled", statusColor:"#8e8e93", route:"Reno → Byron Bay", passengers:36, arrival:"1:45 PM"}
+    ];
+    const codes = ["SM-04-117","SM-04-121","SM-07-033","SM-11-208","SM-12-014"];
+    const amts = ["$12.50","$4.00","$27.25","$8.75","$52.00"];
+    const machines = codes.map((code,i)=>({code, amount:amts[i], radius: i===0 ? "10px 10px 0 0" : (i===codes.length-1 ? "0 0 10px 10px" : "0")}));
+    const dots = this.names.map((_,i)=>({ color: i===idx ? 'var(--color-primary)' : 'var(--border-strong)' }));
+    return {
+      idx, shift: `-${idx*100}%`, label: this.names[idx], dots,
+      events, groups, machines,
+      prev: () => this.setState(s => ({ idx: (s.idx - 1 + n) % n })),
+      next: () => this.setState(s => ({ idx: (s.idx + 1) % n }))
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "playersoft-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Playersoft.com — static site for GitHub Pages",
+  "scripts": {
+    "build": "node build/build.mjs",
+    "dev": "node build/build.mjs && npx --yes serve site -l 3000",
+    "serve": "npx --yes serve site -l 3000"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

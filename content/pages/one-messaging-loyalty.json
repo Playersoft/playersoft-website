@@ -1,0 +1,77 @@
+{
+  "slug": "solutions/one-messaging-loyalty",
+  "url": "/solutions/one-messaging-loyalty/",
+  "navKey": "solutions",
+  "subnavKey": "one-messaging-loyalty",
+  "title": "ONE Messaging + Loyalty | Playersoft",
+  "description": "An award-winning suite of applications to drive player engagement and loyalty — powered by Playersoft's ONE System.",
+  "sections": [
+    {
+      "type": "hero",
+      "skyline": true,
+      "deco": ["a"],
+      "variant": "page",
+      "eyebrow": "Solutions · stay connected & engaged",
+      "heading": "ONE Messaging + Loyalty",
+      "lede": "Even more tools to make players feel special. An award-winning suite of applications to drive player engagement and loyalty — powered by Playersoft's ONE System."
+    },
+    {
+      "type": "cardGrid",
+      "heading": "Make Your Players Love You",
+      "columns": 3,
+      "strip": true,
+      "cards": [
+        {
+          "icon": "megaphone",
+          "title": "ONE Messaging + Host Chat",
+          "body": "A secure, real-time SMS platform for casino hosts and operations teams. Send promotions, event invites, and personalized messages while automating outreach — intuitive and compliance-ready."
+        },
+        {
+          "icon": "trend",
+          "title": "ONE Connect",
+          "body": "The bridge between your player rewards and third-party systems. Real-time data sharing, streamlined marketing, and secure, efficient connectivity across platforms."
+        },
+        {
+          "icon": "qr",
+          "title": "Enrollment Web Service",
+          "body": "Let players enroll anytime, anywhere. Guests sign up for your rewards program, verify identity, and opt into marketing offers — before they step onto the gaming floor."
+        }
+      ]
+    },
+    {
+      "type": "featureList",
+      "sunken": true,
+      "eyebrow": "Core features",
+      "heading": "Powered by Playersoft's ONE System",
+      "items": [
+        "Reward management",
+        "Data-driven insights",
+        "Real-time updates",
+        "Automated workflows",
+        "Mobile & desktop accessibility",
+        "Multi-property connectivity",
+        "Enhanced player experience",
+        "Secure & compliance ready"
+      ]
+    },
+    {
+      "type": "statStrip",
+      "stats": [
+        { "value": 100, "suffix": "+", "label": "casinos have utilized Playersoft systems" },
+        { "value": 15, "suffix": " years", "label": "serving casinos since 2010" },
+        { "value": 20, "suffix": "+", "label": "states & tribal gaming approved" }
+      ]
+    },
+    {
+      "type": "cta",
+      "skyline": true,
+      "deco": ["c"],
+      "heading": "Ready to Get Started?",
+      "body": "Book a product demonstration and see ONE running on your floor.",
+      "button": { "label": "Book a demo", "url": "/contact/", "variant": "primary", "size": "lg" }
+    }
+  ],
+  "_notes": {
+    "removed": "ONE Card, Hotel Enrollment, and Loyalty Kiosk were removed from this page at the client's request. Exactly three cards belong here."
+  }
+}

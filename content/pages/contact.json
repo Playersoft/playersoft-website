@@ -1,0 +1,148 @@
+{
+  "slug": "contact",
+  "url": "/contact/",
+  "navKey": "contact",
+  "title": "Contact Playersoft | Book a Demo",
+  "description": "Book a demo, ask a question, or talk through what Playersoft ONE could do on your floor. Info@playersoft.com · 866-711-4919",
+  "sections": [
+    {
+      "type": "hero",
+      "skyline": true,
+      "deco": [
+        "a"
+      ],
+      "variant": "page",
+      "eyebrow": "Contact us",
+      "heading": "Step Into a New Era of Guest Service",
+      "lede": "Reach out to start your journey today — book a demo, ask a question, or talk through what ONE could do on your floor."
+    },
+    {
+      "type": "contact",
+      "form": {
+        "heading": "Ready to Get Started?",
+        "action": "",
+        "fields": [
+          {
+            "name": "firstName",
+            "label": "First name",
+            "type": "text",
+            "required": true,
+            "placeholder": "First name",
+            "half": true
+          },
+          {
+            "name": "lastName",
+            "label": "Last name",
+            "type": "text",
+            "required": true,
+            "placeholder": "Last name",
+            "half": true
+          },
+          {
+            "name": "email",
+            "label": "Email",
+            "type": "email",
+            "required": true,
+            "placeholder": "you@casino.com",
+            "half": true
+          },
+          {
+            "name": "phone",
+            "label": "Phone",
+            "type": "tel",
+            "required": true,
+            "placeholder": "(555) 555-5555",
+            "half": true
+          },
+          {
+            "name": "solution",
+            "label": "Solutions",
+            "type": "select",
+            "required": true,
+            "options": [
+              "ONE Enrollment",
+              "ONE Event Management",
+              "ONE Group Management",
+              "ONE Messaging + Host Chat",
+              "ONE Connect",
+              "Enrollment Web Service",
+              "Host-Player Management (HPM)",
+              "Multiple — not sure yet"
+            ]
+          },
+          {
+            "name": "message",
+            "label": "Message",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "Tell us about your property and goals"
+          }
+        ],
+        "button": {
+          "label": "Send",
+          "variant": "primary",
+          "size": "lg"
+        },
+        "successUrl": "/contact/thank-you/"
+      },
+      "aside": [
+        {
+          "eyebrow": "Talk to us",
+          "items": [
+            {
+              "text": "Info@playersoft.com",
+              "url": "mailto:Info@playersoft.com",
+              "strong": true
+            },
+            {
+              "text": "866-711-4919",
+              "url": "tel:8667114919",
+              "strong": true
+            },
+            {
+              "text": "504 Mission Ave, Suite 200\nEscondido, CA 92025",
+              "url": null
+            }
+          ]
+        },
+        {
+          "eyebrow": "Why reach out",
+          "body": "We empower casinos with mobile-first software to enhance services, boost engagement, and streamline operations. With tools like Playersoft ONE, your team can manage tasks on the go, engage players beyond the club, and deliver faster, more personalized service — even with staffing challenges.",
+          "button": {
+            "label": "Learn more",
+            "url": "/solutions/",
+            "variant": "secondary"
+          }
+        }
+      ],
+      "success": {
+        "heading": "Thank you — we got it",
+        "body": "Your request is in. Someone from the Playersoft team will be in touch shortly to set up a time that works around your floor schedule.",
+        "nextEyebrow": "What happens next",
+        "next": [
+          "A member of our team reaches out within one business day.",
+          "We book a 30-minute walkthrough at a time that suits your shift patterns.",
+          "You see ONE running against a floor set-up like yours — not a generic demo."
+        ],
+        "buttons": [
+          {
+            "label": "Back to home",
+            "url": "/",
+            "variant": "primary",
+            "size": "md"
+          },
+          {
+            "label": "Explore solutions",
+            "url": "/solutions/",
+            "variant": "ghost",
+            "size": "md"
+          }
+        ]
+      }
+    }
+  ],
+  "_notes": {
+    "formAction": "The form has an empty action and does nothing until you set it. Put your Formspree/Basin/Getform endpoint in form.action here, then rebuild. See README step 4.",
+    "confirmation": "Two paths, one panel. With JS the form posts via fetch and the confirmation is revealed in place — the visitor never leaves the page. Without JS (or if the form service insists on redirecting), the hidden _next field sends them to /contact/thank-you/, which renders the identical page with the confirmation already showing. Both read from this same \"success\" block, so they cannot drift apart."
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "slug": "",
+  "url": "/",
+  "navKey": "home",
+  "title": "Playersoft Technologies | Casino Loyalty & Player Development Software",
+  "description": "Award-winning mobile solutions that simplify casino operations and elevate the player experience. Enroll, reward, delight — all in real time.",
+  "sections": [
+    {
+      "type": "hero",
+      "skyline": true,
+      "deco": [
+        "a",
+        "b"
+      ],
+      "eyebrow": "Casino gaming technology",
+      "heading": "Introducing Playersoft ONE",
+      "lede": "Our award-winning mobile technology just got even better. ONE combines Mobile Enrollment, Group, and Event Manager into a single powerful app — so your team can enroll club members, engage players, and run groups and events from one mobile platform.",
+      "buttons": [
+        {
+          "label": "Explore ONE",
+          "url": "/solutions/",
+          "variant": "primary"
+        },
+        {
+          "label": "Book a Demo",
+          "url": "/contact/",
+          "variant": "ghost"
+        }
+      ],
+      "stats": [
+        {
+          "value": 100,
+          "suffix": "+",
+          "label": "casinos served"
+        },
+        {
+          "value": 15,
+          "suffix": " years",
+          "label": "serving casinos since 2010"
+        },
+        {
+          "value": 20,
+          "suffix": "+",
+          "label": "states & tribal gaming approved"
+        }
+      ],
+      "media": {
+        "type": "phone"
+      }
+    },
+    {
+      "type": "livePanel",
+      "title": "Tonight on the floor"
+    },
+    {
+      "type": "cardGrid",
+      "eyebrow": "Three service modes · one app",
+      "heading": "Everything Your Team Needs on the Floor",
+      "columns": 3,
+      "strip": true,
+      "cards": [
+        {
+          "icon": "users",
+          "title": "Club Enrollment",
+          "body": "Instantly enroll players, verify IDs, and issue cards on the casino floor — eliminating lines and streamlining club sign-ups."
+        },
+        {
+          "icon": "star",
+          "title": "Event Management",
+          "body": "Simplify event check-ins, manage RSVPs, and track attendance in real time for seamless guest experiences."
+        },
+        {
+          "icon": "users",
+          "title": "Group Management",
+          "body": "Organize, track, and reward player groups with real-time data — enhancing trip management and engagement."
+        }
+      ],
+      "outro": "ONE is more than an upgrade — it's a game-changer. It empowers your staff to act as Player Concierges, enhancing loyalty and driving more play. Ready to experience the power of ONE?",
+      "outroButton": {
+        "label": "Let's talk",
+        "url": "/contact/",
+        "variant": "accent"
+      }
+    },
+    {
+      "type": "splitMedia",
+      "sunken": true,
+      "eyebrow": "Why Playersoft?",
+      "heading": "Enhancing Every Player Interaction",
+      "paragraphs": [
+        "Exceptional guest service starts with seamless technology. Our solutions simplify operations, empower staff, and enhance the player experience — all while driving revenue for casinos.",
+        "With over a decade of proven success, our mobile-first approach helps casino teams work faster and smarter. From instant enrollments to streamlined events and real-time marketing engagement, your team spends less time on logistics and more time building player relationships."
+      ],
+      "button": {
+        "label": "Read more",
+        "url": "/about/",
+        "variant": "secondary"
+      },
+      "image": {
+        "src": "/assets/img/photo-team-floor.jpg",
+        "alt": "Casino staff using Playersoft ONE on the floor",
+        "height": 380
+      }
+    },
+    {
+      "type": "cardGrid",
+      "eyebrow": "3 key factors",
+      "heading": "What Makes Playersoft Special?",
+      "columns": 3,
+      "numbered": true,
+      "cards": [
+        {
+          "title": "Mobile-First, Guest-Centric Solutions",
+          "body": "Empower your team to deliver high-touch service anywhere on the floor. From enrolling new players to resetting PINs or managing events, our mobile solutions eliminate long lines and create seamless, VIP-style experiences."
+        },
+        {
+          "title": "Effortless Integration with Casino Systems",
+          "body": "Playersoft connects seamlessly with loyalty programs, hotel systems, and POS platforms — a unified experience across gaming, hospitality, dining, and entertainment that makes rewards easier to earn and redeem."
+        },
+        {
+          "title": "The ONE System: All-in-One Engagement",
+          "body": "ONE combines Enrollment, Group, and Event Management into a powerful all-in-one solution. Personalize interactions, track player activity, and optimize rewards — driving stronger engagement and lasting loyalty."
+        }
+      ]
+    },
+    {
+      "type": "testimonials",
+      "sunken": true,
+      "eyebrow": "Winning with Playersoft",
+      "heading": "Trusted by Industry Leaders",
+      "items": [
+        {
+          "quote": "Playersoft knocked the ball out of the park when they developed ONE System. Our club and slot staff can service players using Apple iOS devices to elevate player service.",
+          "from": "WinStar World Casino & Resort"
+        },
+        {
+          "quote": "Playersoft has been an integral partner in our efforts to expand our Genting Rewards membership. The team consistently offers superior service, which made it an easy decision to add Mobile Enrollment at our Resorts World Bimini property.",
+          "from": "Darlene Monzo · Chief Marketing Officer, Genting Americas East"
+        },
+        {
+          "quote": "Both Playersoft systems were first-choice solutions to maximize club enrollments with the staff we have — especially during the grand opening. Every guest can sign up for a Club Serrano card as soon as they arrive and immediately earn rewards at Palms.",
+          "from": "Palms Casino Resort · Club Serrano"
+        }
+      ]
+    },
+    {
+      "type": "columns",
+      "heading": "Always Engaging",
+      "items": [
+        {
+          "title": "Integrated",
+          "body": "Integrated with all major casino management systems, POS, and hotel platforms — and able to connect with third-party systems."
+        },
+        {
+          "title": "Your Data Stays Yours",
+          "body": "All data produced by your casino resides on your servers. Playersoft does not own, collect, or sell data produced by our applications."
+        },
+        {
+          "title": "SMS Enabled",
+          "body": "The Playersoft suite is SMS/text-messaging enabled, giving your team and players the best possible communication experience."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "skyline": true,
+      "deco": [
+        "c"
+      ],
+      "eyebrow": "Since 2009 · 100+ casino properties",
+      "heading": "Ready to See It on Your Floor?",
+      "body": "Book a product demonstration and see ONE running on your floor.",
+      "button": {
+        "label": "Book a demo",
+        "url": "/contact/",
+        "variant": "primary",
+        "size": "lg"
+      }
+    }
+  ]
+}

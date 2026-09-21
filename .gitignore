@@ -1,0 +1,13 @@
+node_modules/
+.DS_Store
+*.log
+
+# Built output is committed so the site can be deployed without a build step.
+# If you'd rather build on the host, uncomment:
+# site/**/index.html
+# site/sitemap.xml
+# site/robots.txt
+
+# Environment — CMS tokens live here, never in the repo
+.env
+.env.local

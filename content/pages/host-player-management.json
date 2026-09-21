@@ -1,0 +1,84 @@
+{
+  "slug": "solutions/host-player-management",
+  "url": "/solutions/host-player-management/",
+  "navKey": "solutions",
+  "subnavKey": "host-player-management",
+  "title": "Host-Player Management | Playersoft",
+  "description": "Developing players as a property. An award-winning, mobile-first application that enhances the relationship between a casino player and their host.",
+  "sections": [
+    {
+      "type": "hero",
+      "skyline": true,
+      "deco": ["a"],
+      "variant": "page",
+      "eyebrow": "Solutions · player development",
+      "heading": "Host-Player Management",
+      "lede": "Developing players as a property. An award-winning, mobile-first application that enhances the relationship between a casino player and their host."
+    },
+    {
+      "type": "cardGrid",
+      "columns": 3,
+      "strip": true,
+      "cards": [
+        {
+          "icon": "gift",
+          "title": "Comp-to-Card Issuance",
+          "body": "Issue comps right from the HPM app. No need to find a PC, log in, and work through a long process — creating a comp has never been so easy."
+        },
+        {
+          "icon": "phone",
+          "title": "Mobile & Desktop",
+          "body": "Move seamlessly between your mobile device and PC to access player data, make changes, or send messages — wherever the work happens."
+        },
+        {
+          "icon": "trend",
+          "title": "Seamless Integration",
+          "body": "Full integrations with all major casino management systems, POS, and property management systems — plus seamless connection to ONE."
+        }
+      ]
+    },
+    {
+      "type": "splitMedia",
+      "eyebrow": "For hosts & player development teams",
+      "heading": "Real-Time Views of Your Floor",
+      "paragraphs": [
+        "See in-house players for events and groups, track communications in real time, and act on reinvestment data — as an individual host or as a coordinated property team."
+      ],
+      "image": { "src": "/assets/img/photo-hpm-floor.jpg", "alt": "Host-Player Management floor view", "height": 280 }
+    },
+    {
+      "type": "featureList",
+      "sunken": true,
+      "eyebrow": "Core features",
+      "heading": "Everything a Host Team Needs",
+      "items": [
+        "Centralized player profiles",
+        "Real-time communications tracking",
+        "Dynamic player segmentation",
+        "Automated host alerts",
+        "View rewards & offers",
+        "Comprehensive reporting & analytics",
+        "SMS & email compatible",
+        "Reinvestment data",
+        "View in-house players for events & groups",
+        "Host task management"
+      ]
+    },
+    {
+      "type": "statStrip",
+      "stats": [
+        { "value": 100, "suffix": "+", "label": "casinos have utilized Playersoft systems" },
+        { "value": 15, "suffix": " years", "label": "serving casinos since 2010" },
+        { "value": 20, "suffix": "+", "label": "states & tribal gaming approved" }
+      ]
+    },
+    {
+      "type": "cta",
+      "skyline": true,
+      "deco": ["c"],
+      "heading": "Ready to Get Started?",
+      "body": "Book a product demonstration and see ONE running on your floor.",
+      "button": { "label": "Book a demo", "url": "/contact/", "variant": "primary", "size": "lg" }
+    }
+  ]
+}
