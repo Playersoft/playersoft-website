@@ -25,6 +25,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      pages_ready: ${{ steps.pages_status.outputs.ready }}
     steps:
       - uses: actions/checkout@v4
 
@@ -40,14 +42,28 @@ jobs:
       - name: Add .nojekyll
         run: touch site/.nojekyll
 
-      - uses: actions/configure-pages@v4
+      - id: pages
+        continue-on-error: true
+        uses: actions/configure-pages@v4
+
+      - id: pages_status
+        name: Check Pages configuration
+        run: |
+          if [ "${{ steps.pages.outcome }}" = "success" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::warning::GitHub Pages is not enabled for this repository. Set Settings → Pages → Build and deployment → Source: GitHub Actions, then re-run this workflow to publish the site."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          fi
 
       - uses: actions/upload-pages-artifact@v3
+        if: steps.pages_status.outputs.ready == 'true'
         with:
           path: site
 
   deploy:
     needs: build
+    if: needs.build.outputs.pages_ready == 'true'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
