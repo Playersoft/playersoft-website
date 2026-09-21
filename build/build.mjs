@@ -22,7 +22,8 @@ import { renderPage, renderSitemap } from './templates.mjs';
 const RETIRED = [
   { at: 'partners', to: '/contact/', why: 'Partners was removed from this redesign; the client is reworking it.' },
   { at: 'news',     to: '/',         why: 'The News page ("The Play" blog) was removed from this redesign.' },
-  { at: 'blog',     to: '/',         why: 'The old blog fed the News page, which was removed.' }
+  { at: 'blog',     to: '/',         why: 'The old blog fed the News page, which was removed.' },
+  { at: 'g2e',      to: 'https://playersoft.connectonehub.com/onehub/home?page=33', why: 'Short link for G2E.' }
 ];
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
